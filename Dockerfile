@@ -5,8 +5,7 @@ FROM maven:3.8.4-jdk-11
 WORKDIR /app
 
 # Copy the POM file and the rest of the code
-COPY ./pom.xml ./ 
-COPY ./src ./src
+COPY ./pom.xml ./
 
 # Build the application
 RUN mvn clean package
