@@ -6,7 +6,6 @@ WORKDIR /app
 
 # Copy the POM file and the rest of the code
 COPY ./pom.xml ./ 
-COPY ./src ./src
 
 # Build the application
 RUN mvn clean package
